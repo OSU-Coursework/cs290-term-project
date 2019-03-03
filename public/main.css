@@ -1,0 +1,207 @@
+/* 
+   this whole file is a total mess...
+
+   it is easy to understand but
+   css seems to be one of those things that requires you
+   to spend time learning strategies for organization more
+   than anything else.
+
+   or maybe just learn bootstrap? need to put some thought
+   towards this
+*/
+
+* {box-sizing:border-box}
+
+/* General page stylng */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #1c1e1f;
+}
+
+/* For hiding unwanted whitespace */
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top of page content formatting */
+.header {
+    color: #f2f2f2;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer {
+    color: #f2f2f2;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 10px;
+}
+
+.links {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+/* https://www.html.am/html-codes/scrollboxes/html-scrollbox.cfm */
+.scrollbox {
+    width: 150px;
+    height: 150px;
+    line-height: 3em;
+    overflow: auto;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+/* Attempting to control image sizing */
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.tastyForm {
+    width: 50%;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Recipe Layout (adapted from exported html recipes I have saved on my machine) */
+.fn {
+    color: #f2f2f2;
+    font-size: 19.0px;
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: normal; margin:0; padding:0;
+}
+
+.categories {
+    color: #605D5D;
+    font-size: 13.0px;
+    font-family:Helvetica;
+    font-style: italic;
+    padding:0 0 4px 0;
+    margin:0;
+}
+
+.instructions {
+    color: #f2f2f2
+    margin:0;
+    padding: 0 0 0 0;
+    font-size:15.0px;
+}
+
+.ingredientsbox {
+    margin: 0 0 0 0;
+    padding: 0px 0 0 0;
+    clear:left;
+}
+
+.ingredients {
+    list-style-type: none;
+    margin:0 0 0 0;
+    padding: 0 30px 10px 0;
+}
+
+.ingredient {
+    padding-bottom: 7px;
+    font-size: 15.0px;
+}
+
+.ingredient:last-child {
+    border-bottom:none;
+}
+
+.photo {
+    float:left;
+    padding-right:12px;
+    width: 0.0px;
+    height: 0.0px;
+}
+
+.infobox {
+    padding-bottom: 4px;
+    clear:both;
+    width:100%;
+    display:block;
+}
+
+.recipe_info {
+    color: #f2f2f2;
+    font-size: 13.0px;
+    padding: 4px 0 0 0;
+    margin:0;
+}
+
+.subhead {
+    color:#d10505;
+    font-size: 13.0px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.clear {
+    clear:both;
+}             

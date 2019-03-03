@@ -1,0 +1,30 @@
+<div class="header">
+  <h1>Project Requirements</h1>
+  <button type="button" onclick="location.href='/'">Home</button>
+</div>
+
+<div class="scrollbox">
+  {{#if bodyParams}}
+  {{#each bodyParams}}
+  <p class="text">
+    {{this.value}} 
+  </p>
+  {{/each}}
+  {{/if}}
+</div>
+
+<div align="center" class="tastyForm">
+  <p class="text">Use this box to type in some recipes to display below!</p>
+  <form  method="post">
+    <input type="text" name="name" id="recipeId">
+    <input type="submit" name="Add Recipe" value="Add Recipe">
+  </form>
+
+  {{#if addRecipe}}
+  <ul>
+    {{#each addRecipe}}
+    <p class="text">{{this.name}}</p>
+    {{/each}}
+  </ul>
+  {{/if}}
+</div>

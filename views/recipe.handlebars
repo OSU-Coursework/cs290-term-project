@@ -1,0 +1,25 @@
+<div class='infobox'>
+  <h1 class='fn'>{{this.title}}</h1>
+  <p class='categories'>{{this.category}}</p>
+  <p class='recipe_info'>
+  <b>Makes </b>
+  <span class='yield'>{{this.yield}}</span>		
+  <b>  Difficulty </b>
+  <span class='difficulty'>{{this.difficulty}}</span>
+</div>
+<div class='ing_dir_box clear' style='padding-top: 10px;' >	
+  <div class='ingredientsbox'>	
+  <h3 class='subhead' style='padding-top:0px; margin-top:0px;'>Ingredients</h3>	
+  <ul class='ingredients'>
+    {{#each ingredients}}
+    <li class='ingredient' style="color:#f2f2f2">{{this}}</li>
+    {{/each}}
+  </ul>
+  </div>
+  <h3 class='subhead' style='margin-top:0; padding-top:0;'>Directions</h3>	
+  <span class='instructions'>
+    {{#each directions}}
+    <p style="color:#f2f2f2">{{this}}</p>
+    {{/each}}
+  </span>
+</div>

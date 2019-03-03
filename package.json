@@ -1,0 +1,20 @@
+{
+  "name": "cs290_project",
+  "version": "1.0.0",
+  "description": "Recipe Web App",
+  "main": "recipe_app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "forever": "^0.15.3",
+    "mysql": "^2.8.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Casey Nord",
+  "license": "ISC"
+}
